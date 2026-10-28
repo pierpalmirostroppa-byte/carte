@@ -210,3 +210,14 @@ p { margin: 0; }
   *, *::before, *::after { transition-duration: 0s !important; }
   .js-pronto .appare { opacity: 1; transform: none; }
 }
+
+/* ---- barra dei tre siti (Videogiochi · Libri · Giochi di carte), la scrive strumenti-siti/famiglia.js ---- */
+.famiglia {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 2px 22px;
+  padding: 4px var(--gutter); background: #0b1913; border-bottom: 1px solid rgba(255, 255, 255, .08);
+  font: 600 .8rem/1.3 var(--testo); letter-spacing: .08em; text-transform: uppercase;
+}
+.famiglia a { color: rgba(236, 230, 214, .68); text-decoration: none; padding: 6px 2px 4px; border-bottom: 2px solid transparent; }
+.famiglia a:hover, .famiglia a:focus-visible { color: var(--carta); }
+.famiglia a[aria-current="page"] { color: var(--carta); border-bottom-color: var(--oro); }
+@media (max-width: 480px) { .famiglia { gap: 2px 12px; font-size: .7rem; letter-spacing: .03em; padding-inline: 10px; } }
