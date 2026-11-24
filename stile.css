@@ -221,3 +221,32 @@ p { margin: 0; }
 .famiglia a:hover, .famiglia a:focus-visible { color: var(--carta); }
 .famiglia a[aria-current="page"] { color: var(--carta); border-bottom-color: var(--oro); }
 @media (max-width: 480px) { .famiglia { gap: 2px 12px; font-size: .7rem; letter-spacing: .03em; padding-inline: 10px; } }
+
+/* pagina di un gioco e regolamento */
+.pagina-gioco-in { max-width: 1180px; margin: 0 auto; padding: clamp(28px, 5vw, 56px) var(--gutter) 0; }
+.indietro { display: inline-block; color: var(--chiaro-2); text-decoration: none; font-weight: 600; }
+.indietro:hover { color: var(--chiaro); }
+.sottomenu { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+.sottomenu a { text-decoration: none; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--bordo); font-weight: 700; color: var(--chiaro-2); }
+.sottomenu a:hover { background: var(--feltro-3); color: var(--chiaro); }
+.sottomenu a[aria-current="page"] { background: var(--oro); border-color: var(--oro); color: #13291f; }
+.pagina-gioco .sezione { padding-top: clamp(20px, 4vw, 40px); }
+.regole { --play: #6d5ae6; --fast: #e04848; --gem: #2fae45; --cal: #b04ad0; --brown: #a07563; }
+.regole .claim { color: var(--chiaro-2); font-style: italic; margin: 10px 0 22px; }
+.regole-testo { margin-top: 10px; }
+.regole-testo .regole-h2 { margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--bordo); }
+.regole-testo h3 { margin-top: 24px; font-size: clamp(1.15rem, 2.2vw, 1.4rem); color: var(--oro); }
+.regole-testo p, .regole-testo li { color: var(--chiaro-2); }
+.regole-testo p { margin-top: 12px; }
+.regole-testo ul, .regole-testo ol { margin: 12px 0 0; padding-left: 1.3em; }
+.regole-testo li { margin-top: 6px; }
+.regole-testo b, .regole-testo em { color: var(--chiaro); }
+.regole-testo .piccolo { font-size: .95em; }
+.regole-testo .nota { margin-top: 16px; padding: 12px 16px; border-left: 4px solid var(--oro); background: var(--feltro-2); border-radius: 0 10px 10px 0; color: var(--chiaro); }
+.regole-testo .fase { margin-top: 22px; font: 700 1.15rem/1.3 var(--titoli); letter-spacing: .06em; text-transform: uppercase; color: var(--oro); }
+.regole-testo .fase-nota { font: 600 .85em var(--testo); text-transform: none; letter-spacing: 0; color: var(--chiaro-2); }
+.regole-testo ul.tipo { list-style: none; padding-left: 0; }
+.regole-testo .k { display: inline-block; width: 14px; height: 14px; border-radius: 4px; margin-right: 10px; vertical-align: -1px; }
+.regole-fine { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; }
+.regole a.btn { color: #13291f; text-decoration: none; }
+.regole a.btn-vuoto { color: var(--chiaro); }
